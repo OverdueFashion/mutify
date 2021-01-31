@@ -4,7 +4,6 @@ window.onload = setTimeout(() => {
     setInterval(() => {
         dur = d.innerText.split(":");
         dur = Math.floor(dur[0])*60 + Math.floor(dur[1]);
-        console.log(dur);
         if(dur>30){
             if(mute.className == "spoticon-volume-off-16 control-button volume-bar__icon"){
                 mute.click();
