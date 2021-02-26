@@ -4,7 +4,7 @@ window.onload = setTimeout(() => {
     setInterval(() => {
         dur = d.innerText.split(":");
         dur = Math.floor(dur[0])*60 + Math.floor(dur[1]);
-        if(dur>30){
+        if(dur>35){
             if(mute.title == "Unmute"){
                 mute.click();
             }
