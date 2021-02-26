@@ -1,11 +1,11 @@
 window.onload = setTimeout(() => {
     const d = document.querySelector("#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.now-playing-bar__center > div > div.playback-bar > div:nth-child(3)"); // current song's duration
-    const mute = document.querySelector("#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.now-playing-bar__right > div > div.volume-bar > button"); //mute button element
+    const mute = document.querySelector("#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.now-playing-bar__right > div > div.volume-bar > button"); //mute button
     setInterval(() => {
         dur = d.innerText.split(":");
         dur = Math.floor(dur[0])*60 + Math.floor(dur[1]);
         if(dur>30){
-            if(mute.className == "spoticon-volume-off-16 control-button volume-bar__icon"){
+            if(mute.title == "Unmute"){
                 mute.click();
             }
         }
@@ -13,8 +13,8 @@ window.onload = setTimeout(() => {
             //No song 
         }
         else {
-            if(mute.className == "spoticon-volume-twowave-16 control-button volume-bar__icon"){
-                mute.click();
+            if(mute.title == "Mute"){
+                mute.click();  
             }
         }
     }, 3000);
