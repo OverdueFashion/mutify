@@ -6,5 +6,5 @@
   * To show off my noob JS skills 
 ## Working
   * For loop running with an interval of 3 secs 
-  * checks for the duradation if less than 30 secs mute else unmute 
-  * Not reallly ad free but 1 min of silence is lot better than "Whether you're up in the clouds or going way underground, it's............."
+  * checks for the duration if less than 30 secs mute else unmute 
+  * Not really ad free but 1 min of silence is lot better than "Whether you're up in the clouds or going way underground, it's............."
